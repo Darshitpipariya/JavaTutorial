@@ -18,6 +18,7 @@ public class InterationDemo{
 			System.out.println("Hello for!");
 		}
 		String[] ch= {"darshit","pipariya"};
+//		extended for loop
 		for(String c:ch) {
 			System.out.println(c);
 		}
