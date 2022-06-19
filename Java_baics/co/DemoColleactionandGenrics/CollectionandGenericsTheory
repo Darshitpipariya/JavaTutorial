@@ -1,0 +1,59 @@
+collection is part of java.util package
+
+
+we are taking about three type
+->collection as concept
+->Collection interface
+->Collections api(class)
+
+Collection (interface)
+   List (interface) implements Collection
+   		ArrayList (class) implements List
+   Set (interface) implements Collection
+   		HashSet(class) implements Set
+   		TreeSet(class) implements Set
+   Map (interface) implements Collection
+   		HashMap(class) implements Map //not syncronized
+   		HashTable(class) implements Map //syncronized(for thred safty)
+Syntex  
+
+Collection values=new ArrayList();
+
+when to use collection:
+	in array number of element is fixed
+	if it is not fixed than we use ArrayList;
+	now in above type of  values is object type that means we can store any type of abject in Values ArrayList
+	to Fix the type use below Syntex
+	  
+	  *		Collection<Integer> values=new ArrayList<Integer>();
+	  <type> is genrics :-to specify type
+	  
+	  //now after java 1.7 updated syntex:
+	  *		Collection<Integer> values=new ArrayList<>();
+	  
+	  to add value
+	  *		values.add(1);
+	  
+	  now Collection does not work with index number
+	  
+	  inorder to work with index number we will use List interface 
+	  
+	  *		List<Integer> values=new ArrayList<>();
+	  order in which we get element is fixed from first to last
+	  
+	  we have set interface (no duplicate values allowed) unorderd(not indexed)
+	  * 	Set<Integer> number = new HashSet<>();
+	  order in which we get element is not fixed(it is random)
+	  * 	Set<Integer> number =new TreeSet<>();
+	  order in which we get is sorted.
+	  
+	  MAP:
+	  Map is interface
+	  it is implemented by HashMap or HashTable
+	  Map will have key(like dict in python)
+	  Map<key,value>
+	  * 	Map<int ,String> m=new HashMap<>();
+	  
+	  
+	  
+	  
